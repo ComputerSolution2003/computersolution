@@ -1,0 +1,2168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Computer Solution – Fast, reliable laptop & PC repair in Adajan, Surat. Same-day repairs, data recovery, Windows installation & accessories. Call now!">
+<meta name="keywords" content="laptop repair Adajan, computer repair Surat, data recovery Surat, Windows installation, PC upgrade Adajan">
+<meta name="author" content="Rehan S Pothiyawala">
+<meta property="og:title" content="Computer Solution – Laptop & PC Repair, Adajan Surat">
+<meta property="og:description" content="17 years of trusted computer repair in Adajan, Surat. Same-day service, data safety guaranteed.">
+<meta property="og:type" content="website">
+<title>Computer Solution | Laptop & PC Repair – Adajan, Surat</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
+
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%230f1923'/><text x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-size='18' font-family='sans-serif' fill='%2300e5ff'>CS</text></svg>">
+
+<style>
+  /* ===== CSS VARIABLES ===== */
+  :root {
+    --bg:        #f5f3ef;
+    --bg-dark:   #0f1923;
+    --ink:       #1a1a2e;
+    --ink-mid:   #3a3a4a;
+    --ink-light: #6b6b7b;
+    --accent:    #00c8e0;
+    --accent-glow: #00e5ff;
+    --accent-dark: #0098b0;
+    --accent-warm: #ff6b35;
+    --surface:   #eceae4;
+    --surface2:  #e0ded8;
+    --white:     #faf9f7;
+    --green:     #25d366;
+
+    --font-head: 'DM Serif Display', Georgia, serif;
+    --font-body: 'DM Sans', system-ui, sans-serif;
+
+    --radius:    12px;
+    --radius-lg: 20px;
+    --shadow:    0 4px 24px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 48px rgba(0,0,0,0.15);
+    --transition: 0.25s cubic-bezier(0.4,0,0.2,1);
+  }
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; font-size: 16px; }
+
+  body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: inherit; text-decoration: none; }
+  ul { list-style: none; }
+
+  .container {
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  /* ===== CIRCUIT MOTIF UTILITY ===== */
+  /* Blueprint grid + circuit node bullets used 6 times */
+
+  .circuit-bullet {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .circuit-bullet::before {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px var(--accent-glow);
+    flex-shrink: 0;
+  }
+
+  /* ===== SECTION HEADERS ===== */
+  .section-label {
+    font-family: var(--font-body);
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--accent-dark);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .section-label::after {
+    content: '';
+    flex: 1;
+    max-width: 48px;
+    height: 1px;
+    background: var(--accent);
+  }
+
+  .section-title {
+    font-family: var(--font-head);
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.15;
+    color: var(--ink);
+    margin-bottom: 16px;
+  }
+
+  .section-sub {
+    font-size: 1rem;
+    color: var(--ink-mid);
+    max-width: 520px;
+    margin-bottom: 48px;
+  }
+
+  /* ===== BUTTONS ===== */
+  .btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 14px 28px;
+    border-radius: var(--radius);
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all var(--transition);
+    white-space: nowrap;
+    text-decoration: none;
+  }
+
+  .btn-primary {
+    background: var(--accent);
+    color: var(--bg-dark);
+    border-color: var(--accent);
+  }
+  .btn-primary:hover {
+    background: var(--accent-glow);
+    border-color: var(--accent-glow);
+    box-shadow: 0 0 20px rgba(0,229,255,0.4);
+    transform: translateY(-2px);
+  }
+
+  .btn-outline {
+    background: transparent;
+    color: var(--ink);
+    border-color: var(--ink);
+  }
+  .btn-outline:hover {
+    background: var(--ink);
+    color: var(--white);
+    transform: translateY(-2px);
+  }
+
+  .btn-whatsapp {
+    background: var(--green);
+    color: #fff;
+    border-color: var(--green);
+  }
+  .btn-whatsapp:hover {
+    background: #20bd5a;
+    border-color: #20bd5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37,211,102,0.35);
+  }
+
+  .btn-call {
+    background: transparent;
+    color: var(--bg-dark);
+    border-color: var(--bg-dark);
+  }
+  .btn-call:hover {
+    background: var(--bg-dark);
+    color: var(--white);
+  }
+
+  .btn-sm {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+    border-radius: 8px;
+  }
+
+  /* ===== STICKY HEADER ===== */
+  #site-header {
+    position: sticky;
+    top: 0;
+    z-index: 900;
+    background: rgba(15,25,35,0.97);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0,200,224,0.15);
+    padding: 0 20px;
+  }
+
+  .header-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .logo-icon {
+    width: 38px;
+    height: 38px;
+    background: var(--accent);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo-text {
+    font-family: var(--font-head);
+    font-size: 1.25rem;
+    color: var(--white);
+    line-height: 1.1;
+  }
+  .logo-text span {
+    display: block;
+    font-family: var(--font-body);
+    font-size: 0.65rem;
+    font-weight: 400;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+
+  .header-nav {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: auto;
+  }
+
+  .header-nav a {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: rgba(250,249,247,0.8);
+    padding: 8px 12px;
+    border-radius: 6px;
+    transition: all var(--transition);
+  }
+  .header-nav a:hover {
+    color: var(--accent);
+    background: rgba(0,200,224,0.1);
+  }
+
+  .header-ctas {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+  }
+
+  .header-ctas .btn {
+    padding: 9px 18px;
+    font-size: 0.85rem;
+  }
+
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    padding: 6px;
+    background: none;
+    border: none;
+    margin-left: auto;
+  }
+  .hamburger span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--white);
+    border-radius: 2px;
+    transition: all var(--transition);
+  }
+
+  .mobile-menu {
+    display: none;
+    background: rgba(15,25,35,0.98);
+    padding: 20px;
+    border-top: 1px solid rgba(0,200,224,0.12);
+  }
+  .mobile-menu.open { display: block; }
+  .mobile-menu a {
+    display: block;
+    color: var(--white);
+    padding: 12px 0;
+    font-size: 1rem;
+    font-weight: 500;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .mobile-menu a:last-child { border-bottom: none; }
+
+  /* ===== HERO ===== */
+  #hero {
+    background: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+    padding: 100px 20px 80px;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Blueprint grid background */
+  #hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,200,224,0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,200,224,0.05) 1px, transparent 1px);
+    background-size: 48px 48px;
+    pointer-events: none;
+  }
+
+  /* Glowing circuit lines */
+  #hero::after {
+    content: '';
+    position: absolute;
+    bottom: -60px;
+    right: -60px;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(ellipse at center, rgba(0,200,224,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .hero-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+
+  .hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(0,200,224,0.12);
+    border: 1px solid rgba(0,200,224,0.3);
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 50px;
+    margin-bottom: 24px;
+  }
+
+  .hero-title {
+    font-family: var(--font-head);
+    font-size: clamp(2.4rem, 6vw, 3.8rem);
+    line-height: 1.1;
+    color: var(--white);
+    margin-bottom: 20px;
+  }
+  .hero-title em {
+    font-style: italic;
+    color: var(--accent);
+  }
+
+  .hero-proof {
+    font-size: 1rem;
+    color: rgba(250,249,247,0.65);
+    margin-bottom: 36px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .hero-proof::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: var(--accent);
+    border-radius: 50%;
+    box-shadow: 0 0 10px var(--accent-glow);
+    flex-shrink: 0;
+  }
+
+  .hero-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .hero-visual {
+    position: relative;
+  }
+
+  .hero-img-wrap {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.5);
+    aspect-ratio: 4/3;
+  }
+  .hero-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .hero-img-wrap::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: var(--radius-lg);
+    border: 1px solid rgba(0,200,224,0.25);
+    pointer-events: none;
+  }
+
+  /* Floating stat card */
+  .hero-stat-card {
+    position: absolute;
+    bottom: -20px;
+    left: -28px;
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 180px;
+  }
+  .hero-stat-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(0,200,224,0.1);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .hero-stat-num {
+    font-family: var(--font-head);
+    font-size: 1.5rem;
+    color: var(--ink);
+    line-height: 1;
+  }
+  .hero-stat-label {
+    font-size: 0.75rem;
+    color: var(--ink-light);
+    font-weight: 500;
+  }
+
+  .hero-stat-card2 {
+    position: absolute;
+    top: -16px;
+    right: -20px;
+    background: var(--accent);
+    border-radius: var(--radius);
+    padding: 14px 18px;
+    box-shadow: 0 8px 32px rgba(0,200,224,0.35);
+    text-align: center;
+    min-width: 130px;
+  }
+  .hero-stat-card2 .num {
+    font-family: var(--font-head);
+    font-size: 1.6rem;
+    color: var(--bg-dark);
+    line-height: 1;
+    font-weight: 700;
+  }
+  .hero-stat-card2 .lbl {
+    font-size: 0.72rem;
+    font-weight: 600;
+    color: var(--bg-dark);
+    opacity: 0.8;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  /* ===== TRUST STRIP ===== */
+  #trust {
+    background: var(--ink);
+    padding: 32px 20px;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Hazard stripe accent - circuit motif usage #2 */
+  #trust::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--accent) 0px,
+      var(--accent) 40px,
+      transparent 40px,
+      transparent 60px
+    );
+  }
+
+  .trust-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0;
+  }
+
+  .trust-item {
+    text-align: center;
+    padding: 16px 20px;
+    position: relative;
+  }
+  .trust-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 20%;
+    height: 60%;
+    width: 1px;
+    background: rgba(255,255,255,0.1);
+  }
+
+  .trust-num {
+    font-family: var(--font-head);
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    color: var(--accent);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .trust-label {
+    font-size: 0.82rem;
+    color: rgba(250,249,247,0.7);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+  }
+
+  /* ===== SERVICES ===== */
+  #services {
+    padding: 100px 20px;
+    background: var(--bg);
+    position: relative;
+  }
+
+  /* Circuit node motif #3 - background decoration */
+  #services::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: 0;
+    width: 280px;
+    height: 280px;
+    background-image:
+      radial-gradient(circle, rgba(0,200,224,0.06) 2px, transparent 2px);
+    background-size: 28px 28px;
+    pointer-events: none;
+  }
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  /* Layout-breaking moment: first card spans 2 cols */
+  .service-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    border: 1px solid var(--surface2);
+    box-shadow: var(--shadow);
+    transition: all var(--transition);
+    display: flex;
+    flex-direction: column;
+  }
+  .service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: var(--shadow-lg);
+    border-color: rgba(0,200,224,0.3);
+  }
+
+  .service-card.featured {
+    grid-column: span 2;
+    background: var(--bg-dark);
+    color: var(--white);
+    border-color: rgba(0,200,224,0.2);
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .service-icon {
+    width: 52px;
+    height: 52px;
+    background: rgba(0,200,224,0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+    color: var(--accent);
+  }
+
+  .service-card.featured .service-icon {
+    background: rgba(0,200,224,0.15);
+    width: 64px;
+    height: 64px;
+  }
+
+  .service-name {
+    font-family: var(--font-head);
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+    color: inherit;
+  }
+  .service-card.featured .service-name {
+    font-size: 1.5rem;
+  }
+
+  .service-desc {
+    font-size: 0.88rem;
+    color: var(--ink-mid);
+    line-height: 1.6;
+    flex: 1;
+    margin-bottom: 20px;
+  }
+  .service-card.featured .service-desc {
+    color: rgba(250,249,247,0.7);
+  }
+
+  .service-price {
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--accent-dark);
+    margin-bottom: 16px;
+  }
+  .service-card.featured .service-price {
+    color: var(--accent);
+  }
+
+  .service-footer {
+    margin-top: auto;
+  }
+
+  /* ===== ABOUT ===== */
+  #about {
+    padding: 100px 20px;
+    background: var(--surface);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Circuit lines motif #4 */
+  #about::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: repeating-linear-gradient(
+      90deg,
+      transparent 0px,
+      transparent 20px,
+      rgba(0,200,224,0.4) 20px,
+      rgba(0,200,224,0.4) 24px,
+      transparent 24px,
+      transparent 40px,
+      var(--accent) 40px,
+      var(--accent) 46px,
+      transparent 46px,
+      transparent 60px
+    );
+  }
+
+  .about-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 80px;
+    align-items: start;
+  }
+
+  .about-avatar-wrap {
+    position: sticky;
+    top: 90px;
+  }
+
+  .owner-initials {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-head);
+    font-size: 2.5rem;
+    color: var(--bg-dark);
+    margin-bottom: 24px;
+    box-shadow: 0 8px 32px rgba(0,200,224,0.3);
+  }
+
+  .owner-name {
+    font-family: var(--font-head);
+    font-size: 1.4rem;
+    color: var(--ink);
+    margin-bottom: 4px;
+  }
+  .owner-role {
+    font-size: 0.85rem;
+    color: var(--ink-light);
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+  .differentiators {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
+  }
+
+  .diff-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--ink-mid);
+  }
+
+  .diff-dot {
+    width: 28px;
+    height: 28px;
+    background: rgba(0,200,224,0.12);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--accent-dark);
+  }
+
+  .about-content p {
+    font-size: 1rem;
+    color: var(--ink-mid);
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  .about-content p strong {
+    color: var(--ink);
+  }
+
+  /* ===== GALLERY ===== */
+  #gallery {
+    padding: 100px 20px;
+    background: var(--bg-dark);
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Circuit grid motif #5 */
+  #gallery::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0,200,224,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0,200,224,0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    pointer-events: none;
+  }
+
+  #gallery .section-title { color: var(--white); }
+  #gallery .section-label { color: var(--accent); }
+
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+    position: relative;
+    z-index: 1;
+  }
+
+  .gallery-item {
+    border-radius: var(--radius);
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+  }
+  .gallery-item:nth-child(1) { grid-column: span 2; aspect-ratio: 16/7; }
+  .gallery-item:nth-child(2) { aspect-ratio: 3/4; }
+  .gallery-item:nth-child(3) { aspect-ratio: 1; }
+  .gallery-item:nth-child(4) { aspect-ratio: 1; }
+  .gallery-item:nth-child(5) { grid-column: span 2; aspect-ratio: 16/7; }
+  .gallery-item:nth-child(6) { aspect-ratio: 3/2; }
+  .gallery-item:nth-child(7) { aspect-ratio: 3/2; }
+  .gallery-item:nth-child(8) { aspect-ratio: 3/2; }
+
+  .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s ease;
+  }
+  .gallery-item:hover img { transform: scale(1.04); }
+
+  .gallery-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(15,25,35,0.5) 0%, transparent 60%);
+    opacity: 0;
+    transition: opacity var(--transition);
+  }
+  .gallery-item:hover::after { opacity: 1; }
+
+  /* ===== TESTIMONIALS ===== */
+  #testimonials {
+    padding: 100px 20px;
+    background: var(--bg);
+  }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .review-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    border: 1px solid var(--surface2);
+    box-shadow: var(--shadow);
+    position: relative;
+    transition: all var(--transition);
+  }
+  .review-card:nth-child(2) {
+    margin-top: -16px;
+    border-color: rgba(0,200,224,0.25);
+  }
+  .review-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .review-quote {
+    font-family: var(--font-head);
+    font-size: 4rem;
+    color: var(--accent);
+    line-height: 0.8;
+    margin-bottom: 8px;
+    opacity: 0.5;
+  }
+
+  .review-text {
+    font-size: 0.95rem;
+    color: var(--ink-mid);
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .review-stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 16px;
+  }
+
+  .review-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-top: 1px solid var(--surface2);
+    padding-top: 16px;
+  }
+
+  .review-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--accent) 0%, var(--accent-dark) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-head);
+    font-size: 1rem;
+    color: var(--bg-dark);
+    flex-shrink: 0;
+    font-weight: 700;
+  }
+
+  .review-name {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--ink);
+  }
+  .review-area {
+    font-size: 0.78rem;
+    color: var(--ink-light);
+  }
+
+  /* ===== PRICING ===== */
+  #pricing {
+    padding: 100px 20px;
+    background: var(--surface);
+  }
+
+  .pricing-list {
+    max-width: 780px;
+  }
+
+  .price-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--surface2);
+    gap: 20px;
+  }
+  .price-row:last-child { border-bottom: none; }
+
+  .price-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  /* Circuit node motif #6 */
+  .price-node {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px rgba(0,200,224,0.5);
+    flex-shrink: 0;
+    margin-top: 6px;
+  }
+
+  .price-service {
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--ink);
+    margin-bottom: 3px;
+  }
+  .price-note {
+    font-size: 0.8rem;
+    color: var(--ink-light);
+  }
+
+  .price-amount {
+    font-family: var(--font-head);
+    font-size: 1.1rem;
+    color: var(--ink);
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  .pricing-footer {
+    margin-top: 36px;
+    background: rgba(0,200,224,0.08);
+    border: 1px solid rgba(0,200,224,0.2);
+    border-radius: var(--radius);
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    max-width: 780px;
+  }
+  .pricing-footer p {
+    font-size: 0.9rem;
+    color: var(--ink-mid);
+  }
+  .pricing-footer p strong { color: var(--ink); }
+
+  /* ===== CONTACT ===== */
+  #contact {
+    padding: 100px 20px;
+    background: var(--bg-dark);
+    color: var(--white);
+  }
+
+  #contact .section-title { color: var(--white); }
+  #contact .section-label { color: var(--accent); }
+
+  .contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+  }
+
+  .map-wrap {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid rgba(0,200,224,0.2);
+    box-shadow: var(--shadow-lg);
+  }
+  .map-wrap iframe {
+    width: 100%;
+    height: 320px;
+    display: block;
+    filter: brightness(0.85) contrast(1.1);
+  }
+
+  .contact-info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .info-block {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: var(--radius);
+    padding: 20px;
+  }
+
+  .info-block-label {
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .info-block-val {
+    font-size: 0.9rem;
+    color: rgba(250,249,247,0.85);
+    line-height: 1.5;
+  }
+  .info-block-val a { color: var(--accent); }
+  .info-block-val a:hover { text-decoration: underline; }
+
+  .hours-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 8px;
+  }
+  .hours-day {
+    font-size: 0.82rem;
+    color: rgba(250,249,247,0.6);
+  }
+  .hours-time {
+    font-size: 0.82rem;
+    color: rgba(250,249,247,0.9);
+    font-weight: 500;
+  }
+
+  .contact-ctas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  /* ===== FOOTER ===== */
+  #footer {
+    background: #080e14;
+    color: rgba(250,249,247,0.7);
+    padding: 60px 20px 100px;
+    border-top: 1px solid rgba(0,200,224,0.1);
+  }
+
+  .footer-inner {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 60px;
+    margin-bottom: 48px;
+  }
+
+  .footer-brand .logo-text {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-tagline {
+    font-size: 0.88rem;
+    color: rgba(250,249,247,0.5);
+    margin-bottom: 20px;
+    margin-top: 6px;
+    max-width: 260px;
+  }
+
+  .footer-whatsapp-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--green);
+    color: #fff;
+    padding: 12px 22px;
+    border-radius: var(--radius);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all var(--transition);
+  }
+  .footer-whatsapp-cta:hover {
+    background: #20bd5a;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37,211,102,0.35);
+  }
+
+  .footer-col h4 {
+    font-family: var(--font-head);
+    font-size: 1rem;
+    color: var(--white);
+    margin-bottom: 18px;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 10px;
+  }
+  .footer-col ul li a {
+    font-size: 0.85rem;
+    color: rgba(250,249,247,0.6);
+    transition: color var(--transition);
+  }
+  .footer-col ul li a:hover { color: var(--accent); }
+
+  .footer-social {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .social-link {
+    width: 38px;
+    height: 38px;
+    background: rgba(255,255,255,0.07);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgba(250,249,247,0.7);
+    transition: all var(--transition);
+  }
+  .social-link:hover {
+    background: rgba(0,200,224,0.15);
+    color: var(--accent);
+  }
+
+  .footer-bottom {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding-top: 24px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-bottom p {
+    font-size: 0.8rem;
+    color: rgba(250,249,247,0.35);
+  }
+
+  /* ===== STICKY BOTTOM BAR (mobile) ===== */
+  .sticky-bar {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    background: var(--bg-dark);
+    border-top: 2px solid rgba(0,200,224,0.2);
+    padding: 10px 16px;
+    gap: 10px;
+    box-shadow: 0 -8px 32px rgba(0,0,0,0.3);
+  }
+
+  .sticky-bar .btn {
+    flex: 1;
+    justify-content: center;
+    padding: 13px;
+    font-size: 0.9rem;
+  }
+
+  /* ===== SCROLL TOP ===== */
+  .scroll-top {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 800;
+    width: 44px;
+    height: 44px;
+    background: var(--accent);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 4px 16px rgba(0,200,224,0.4);
+    opacity: 0;
+    pointer-events: none;
+    transition: all var(--transition);
+    border: none;
+    color: var(--bg-dark);
+  }
+  .scroll-top.visible {
+    opacity: 1;
+    pointer-events: all;
+  }
+  .scroll-top:hover { transform: translateY(-3px); }
+
+  /* ===== RESPONSIVE ===== */
+  @media (max-width: 1080px) {
+    .hero-inner { gap: 40px; }
+    .services-grid { grid-template-columns: repeat(2, 1fr); }
+    .service-card.featured { grid-column: span 2; }
+    .reviews-grid { grid-template-columns: 1fr 1fr; }
+    .reviews-grid .review-card:nth-child(3) { grid-column: span 2; }
+    .footer-inner { grid-template-columns: 1fr 1fr; }
+    .footer-brand { grid-column: span 2; }
+  }
+
+  @media (max-width: 820px) {
+    .hero-inner {
+      grid-template-columns: 1fr;
+      gap: 48px;
+    }
+    .hero-stat-card { left: 0; bottom: -28px; }
+    .hero-stat-card2 { right: 0; top: -20px; }
+    .trust-inner { grid-template-columns: repeat(2, 1fr); }
+    .trust-item:nth-child(2)::after { display: none; }
+    .about-inner { grid-template-columns: 1fr; gap: 40px; }
+    .about-avatar-wrap { position: static; display: flex; align-items: flex-start; gap: 24px; flex-wrap: wrap; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-info-grid { grid-template-columns: 1fr 1fr; }
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-item:nth-child(1) { grid-column: span 2; aspect-ratio: 16/8; }
+    .gallery-item:nth-child(5) { grid-column: span 2; }
+    .gallery-item:nth-child(2),
+    .gallery-item:nth-child(3),
+    .gallery-item:nth-child(4),
+    .gallery-item:nth-child(6),
+    .gallery-item:nth-child(7),
+    .gallery-item:nth-child(8) { aspect-ratio: 3/2; }
+    .header-nav { display: none; }
+    .header-ctas { display: none; }
+    .hamburger { display: flex; }
+    .sticky-bar { display: flex; }
+    #footer { padding-bottom: 90px; }
+    .scroll-top { bottom: 90px; }
+    .footer-inner { grid-template-columns: 1fr 1fr; gap: 40px; }
+    .footer-brand { grid-column: span 2; }
+    .reviews-grid { grid-template-columns: 1fr; }
+    .reviews-grid .review-card:nth-child(2) { margin-top: 0; }
+    .reviews-grid .review-card:nth-child(3) { grid-column: span 1; }
+  }
+
+  @media (max-width: 520px) {
+    .hero-title { font-size: 2.2rem; }
+    .hero-ctas { flex-direction: column; }
+    .hero-ctas .btn { width: 100%; justify-content: center; }
+    .hero-stat-card, .hero-stat-card2 { display: none; }
+    .services-grid { grid-template-columns: 1fr; }
+    .service-card.featured { grid-column: span 1; flex-direction: column; }
+    .trust-inner { grid-template-columns: repeat(2, 1fr); }
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item:nth-child(n) { grid-column: span 1; aspect-ratio: 4/3; }
+    .contact-info-grid { grid-template-columns: 1fr; }
+    .footer-inner { grid-template-columns: 1fr; }
+    .footer-brand { grid-column: span 1; }
+    .footer-bottom { flex-direction: column; text-align: center; }
+    .section-title { font-size: 1.9rem; }
+    .pricing-footer { flex-direction: column; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="site-header">
+  <div class="header-inner">
+    <a href="#" class="logo" aria-label="Computer Solution Home">
+  <img
+    src="https://i.ibb.co/gMDz8h1d/Whats-App-Image-2026-04-30-at-12-57-28-PM-2.png"
+    alt="Computer Solution Logo"
+    style="height:44px; width:auto; object-fit:contain;"
+  >
+  <div class="logo-text">
+    Computer Solution
+    <span>Adajan, Surat</span>
+  </div>
+</a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-ctas">
+      <a href="tel:+917878787858" class="btn btn-outline btn-sm" aria-label="Call us">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+        Call Now
+      </a>
+      <a href="https://wa.me/917878787858?text=Hi%20Computer%20Solution!%20I%20need%20repair%20help.%20Please%20assist%20me." class="btn btn-whatsapp btn-sm" aria-label="WhatsApp us" target="_blank" rel="noopener">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+
+    <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+
+  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
+    <a href="#services" class="mobile-link">Services</a>
+    <a href="#about" class="mobile-link">About</a>
+    <a href="#pricing" class="mobile-link">Pricing</a>
+    <a href="#testimonials" class="mobile-link">Reviews</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </nav>
+</header>
+
+
+<!-- ===== HERO ===== -->
+<section id="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <!-- Circuit node motif #1 -->
+        <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
+          <circle cx="5" cy="5" r="4" stroke="currentColor" stroke-width="1.5"/>
+          <circle cx="5" cy="5" r="1.5" fill="currentColor"/>
+        </svg>
+        Adajan's Trusted Repair Experts Since 2007
+      </div>
+
+      <h1 class="hero-title">
+        Your Laptop Fixed Fast — <em>Same Day,</em> Data Safe, Guaranteed.
+      </h1>
+
+      <p class="hero-proof">17 years serving Adajan &amp; Surat — over 4,800 devices repaired, zero data loss incidents.</p>
+
+      <div class="hero-ctas">
+        <a href="https://wa.me/917878787858?text=Hello%20Computer%20Solution!%20I%20need%20a%20same-day%20laptop%20repair.%20Please%20let%20me%20know%20availability." class="btn btn-primary" target="_blank" rel="noopener" aria-label="WhatsApp for same-day repair">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          Book Same-Day Repair
+        </a>
+        <a href="tel:+917878787858" class="btn btn-outline" style="color:var(--white);border-color:rgba(250,249,247,0.4);" aria-label="Call Computer Solution">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+          Call +91 78787 87858
+        </a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-img-wrap">
+        <img
+          src="https://i.ibb.co/HpPrjMCJ/Chat-GPT-Image-Apr-30-2026-01-26-24-PM.jpg"
+          alt="Computer Solution Adajan Surat"
+          width="800"
+          height="600"
+          loading="eager"
+        >
+      </div>
+
+      <div class="hero-stat-card2">
+        <div class="num">17+</div>
+        <div class="lbl">Years of Trust</div>
+      </div>
+
+      <div class="hero-stat-card">
+        <div class="hero-stat-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <div>
+          <div class="hero-stat-num">100%</div>
+          <div class="hero-stat-label">Data Safety Promise</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== TRUST STRIP ===== -->
+<section id="trust" aria-label="Key stats">
+  <div class="trust-inner">
+    <div class="trust-item">
+      <div class="trust-num">17+</div>
+      <div class="trust-label">Years in Business</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num">4,800+</div>
+      <div class="trust-label">Devices Repaired</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num">Same Day</div>
+      <div class="trust-label">Repair Turnaround</div>
+    </div>
+    <div class="trust-item">
+      <div class="trust-num">0</div>
+      <div class="trust-label">Data Loss Incidents</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== SERVICES ===== -->
+<section id="services">
+  <div class="container">
+    <div class="section-label">What We Fix &amp; Offer</div>
+    <h2 class="section-title">Every Repair, Done Right</h2>
+    <p class="section-sub">From a cracked screen to a failed hard drive, we handle it all — quickly, carefully, and at a price that makes sense.</p>
+
+    <div class="services-grid">
+
+      <!-- Featured card: spans 2 cols -->
+      <article class="service-card featured">
+        <div class="service-icon">
+          <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <div>
+          <h3 class="service-name">Laptop Repair &amp; Servicing</h3>
+          <p class="service-desc">Screen replacement, motherboard repair, battery replacement, overheating fixes, keyboard issues — we handle all brands: Dell, HP, Lenovo, Acer, ASUS, Apple and more. Most jobs finished the same day you walk in.</p>
+          <div class="service-price">Starting ₹350 — Parts + Labour Transparent Quote</div>
+          <div class="service-footer">
+            <a href="https://wa.me/917878787858?text=Hi!%20I%20need%20laptop%20repair%20service.%20Can%20you%20help%20me%20with%20a%20quote%20and%20timeline%3F" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener" aria-label="WhatsApp for laptop repair">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Ask on WhatsApp
+            </a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Card 2 -->
+      <article class="service-card">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="12" rx="1"/><path d="M9 20h6M12 16v4"/><path d="M8 9l2 2 4-4"/></svg>
+        </div>
+        <h3 class="service-name">Desktop Repair &amp; Upgrade</h3>
+        <p class="service-desc">RAM upgrades, SSD installation, PSU replacement, GPU fitting, thermal paste reapplication. We build custom PCs too — gaming or office setups.</p>
+        <div class="service-price">Starting ₹250 — Free Diagnosis</div>
+        <div class="service-footer">
+          <a href="https://wa.me/917878787858?text=Hello!%20I%20need%20desktop%20repair%20or%20upgrade%20service.%20Can%20you%20give%20me%20details%20and%20pricing%3F" class="btn btn-primary btn-sm" target="_blank" rel="noopener" aria-label="WhatsApp for desktop repair">
+            Get Quote
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3 -->
+      <article class="service-card">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/><circle cx="12" cy="10" r="3"/></svg>
+        </div>
+        <h3 class="service-name">Windows Installation &amp; Software Setup</h3>
+        <p class="service-desc">Fresh Windows 10 / 11 install, driver setup, antivirus, Office, and all essential software. Clean, licensed, and fast — done same day.</p>
+        <div class="service-price">₹500 – ₹900 including drivers</div>
+        <div class="service-footer">
+          <a href="https://wa.me/917878787858?text=Hi!%20I%20need%20Windows%20installation%20or%20software%20setup.%20What%20is%20your%20charge%20and%20timing%3F" class="btn btn-primary btn-sm" target="_blank" rel="noopener" aria-label="WhatsApp for Windows installation">
+            Book Now
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4 -->
+      <article class="service-card">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/><path d="M9 9h6M9 13h4"/></svg>
+        </div>
+        <h3 class="service-name">Data Recovery Services</h3>
+        <p class="service-desc">Accidentally deleted files, dead hard drive, corrupted storage? We recover data from HDDs, SSDs, USBs, and memory cards — with full privacy.</p>
+        <div class="service-price">₹800 – ₹3,500 based on complexity</div>
+        <div class="service-footer">
+          <a href="https://wa.me/917878787858?text=Hello%20Computer%20Solution!%20I%20need%20data%20recovery%20help.%20My%20data%20is%20lost%20and%20I%20need%20urgent%20assistance." class="btn btn-primary btn-sm" target="_blank" rel="noopener" aria-label="WhatsApp for data recovery">
+            Urgent Recovery
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 5 -->
+      <article class="service-card">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 7V5a2 2 0 012-2h6a2 2 0 012 2v2"/><circle cx="12" cy="12" r="2"/></svg>
+        </div>
+        <h3 class="service-name">Accessories &amp; PC Components</h3>
+        <p class="service-desc">Keyboards, mice, SSDs, webcams, headsets, gaming peripherals, UPS, cables — all at competitive prices. We stock trusted brands and can source anything on order.</p>
+        <div class="service-price">Best price guaranteed — wide stock</div>
+        <div class="service-footer">
+          <a href="https://wa.me/917878787858?text=Hi!%20I%20am%20looking%20for%20computer%20accessories%20or%20components.%20Can%20you%20tell%20me%20what%20is%20available%20and%20pricing%3F" class="btn btn-primary btn-sm" target="_blank" rel="noopener" aria-label="WhatsApp for accessories">
+            Check Availability
+          </a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== ABOUT ===== -->
+<section id="about">
+  <div class="container">
+    <div class="about-inner">
+      <div class="about-avatar-wrap">
+        <div>
+          <div class="owner-initials" aria-label="Owner initials RSP">RSP</div>
+          <div class="owner-name">Rehan S Pothiyawala</div>
+          <div class="owner-role">Founder &amp; Lead Technician</div>
+
+          <div class="differentiators">
+            <div class="diff-item">
+              <div class="diff-dot">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Same-day repair commitment
+            </div>
+            <div class="diff-item">
+              <div class="diff-dot">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Data safety — always the first priority
+            </div>
+            <div class="diff-item">
+              <div class="diff-dot">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Honest, upfront pricing — no hidden charges
+            </div>
+            <div class="diff-item">
+              <div class="diff-dot">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              All brands, all models serviced
+            </div>
+            <div class="diff-item">
+              <div class="diff-dot">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="20 6 9 17 4 12"/></svg>
+              </div>
+              Post-repair 30-day service warranty
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-content">
+        <div class="section-label">Our Story</div>
+        <h2 class="section-title">17 Years of Fixing What Matters</h2>
+
+        <p>I started Computer Solution back in <strong>2007</strong>, from a small shop in Krishna Nagar Society, Adajan. I still remember my cousin bringing me his broken laptop — a Lenovo that wouldn't boot — before I even had a proper shop sign up. We got it running in three hours. That same feeling of handing back a working device to someone who genuinely needed it — that's what still drives me every single day.</p>
+
+        <p>Over 17 years, I've repaired laptops for students cramming before exams, recovered data for business owners who thought everything was gone, and built gaming PCs for teenagers in this very neighbourhood. <strong>Adajan has grown enormously</strong> since 2007, and Computer Solution has grown with it — but the approach hasn't changed: be honest, be fast, and treat every device like it belongs to your own family.</p>
+
+        <p>We don't outsource your repair. When you drop your laptop with us, I or my trained team handles it right here in the shop. <strong>No middlemen. No delays. No surprises on the bill.</strong> That's the promise we've kept for over 4,800 repairs — and counting.</p>
+
+        <div style="margin-top:32px;">
+          <a href="https://wa.me/917878787858?text=Hi%20Rehan!%20I%20want%20to%20bring%20my%20device%20in%20for%20a%20repair.%20Can%20you%20let%20me%20know%20your%20availability%20today%3F" class="btn btn-primary" target="_blank" rel="noopener" aria-label="WhatsApp Rehan directly">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Chat with Rehan Directly
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== GALLERY ===== -->
+<section id="gallery">
+  <div class="container">
+    <div class="section-label">Inside Our Shop</div>
+    <h2 class="section-title" style="margin-bottom:40px;">A Professional Setup, Right in Your Neighbourhood</h2>
+
+    <div class="gallery-grid">
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1588702547919-26089e690ecc?w=800&auto=format&fit=crop" alt="Laptop repair workbench at Computer Solution Adajan" loading="lazy" width="800" height="350">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1629654291663-b91ad427698f?w=800&auto=format&fit=crop" alt="Technician repairing laptop motherboard" loading="lazy" width="400" height="530">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1591799264318-7e6ef8ddb7ea?w=800&auto=format&fit=crop" alt="Gaming PC setup with RGB lighting" loading="lazy" width="400" height="400">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800&auto=format&fit=crop" alt="Computer components and parts" loading="lazy" width="400" height="400">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1603481546238-487240415921?w=800&auto=format&fit=crop" alt="Data recovery process on hard drives" loading="lazy" width="800" height="350">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1555617981-dac3772e7d1e?w=800&auto=format&fit=crop" alt="Computer accessories shop display" loading="lazy" width="400" height="267">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=800&auto=format&fit=crop" alt="Windows installation and software setup" loading="lazy" width="400" height="267">
+      </div>
+      <div class="gallery-item">
+        <img src="https://images.unsplash.com/photo-1547082299-de196ea013d6?w=800&auto=format&fit=crop" alt="Desktop PC repair and upgrade" loading="lazy" width="400" height="267">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== TESTIMONIALS ===== -->
+<section id="testimonials">
+  <div class="container">
+<!-- REVIEW STANDY BANNER -->
+<div style="
+  background: linear-gradient(135deg, #0f1923 0%, #1a2a3a 100%);
+  border-radius: 20px;
+  padding: 40px;
+  margin-bottom: 60px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  border: 1px solid rgba(0,200,224,0.2);
+  flex-wrap: wrap;
+">
+  <!-- Standy Image -->
+  <div style="flex-shrink:0;">
+    <img
+      src="https://i.ibb.co/WpnwvMk4/Whats-App-Image-2026-04-28-at-3-26-43-PM.jpg"
+      alt="Computer Solution Review Standy Adajan Surat"
+      style="
+        width: 220px;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 12px 40px rgba(0,0,0,0.4);
+      "
+      loading="lazy"
+    >
+  </div>
+
+  <!-- Text + Button -->
+  <div style="flex:1; min-width:260px;">
+    <div style="
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: #00c8e0;
+      margin-bottom: 12px;
+    ">Happy With Our Service?</div>
+
+    <h3 style="
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(1.6rem, 4vw, 2.2rem);
+      color: #faf9f7;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    ">Your Review Means<br>The World To Us ⭐</h3>
+
+    <p style="
+      font-size: 0.92rem;
+      color: rgba(250,249,247,0.6);
+      margin-bottom: 28px;
+      line-height: 1.6;
+    ">Takes just 30 seconds. Scan the QR code or tap the button below — your feedback helps other customers in Adajan find us.</p>
+
+    <!-- Stars Row -->
+    <div style="display:flex; gap:6px; margin-bottom:24px;">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="#f59e0b"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+    </div>
+
+    <!-- CTA Buttons -->
+    <div style="display:flex; flex-wrap:wrap; gap:12px;">
+      <a
+        href="https://g.page/r/CYKoJsSwb3btEBM/review"
+        target="_blank"
+        rel="noopener"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          background: #00c8e0;
+          color: #0f1923;
+          padding: 14px 28px;
+          border-radius: 12px;
+          font-weight: 700;
+          font-size: 0.95rem;
+          text-decoration: none;
+          box-shadow: 0 6px 20px rgba(0,200,224,0.35);
+        "
+        onmouseover="this.style.transform='translateY(-2px)'"
+        onmouseout="this.style.transform='translateY(0)'"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+          <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#0f1923"/>
+          <path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#0f1923"/>
+          <path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#0f1923"/>
+          <path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#0f1923"/>
+        </svg>
+        Leave a Google Review
+      </a>
+
+      <a
+        href="https://wa.me/917878787858?text=Hi%20Computer%20Solution!%20I%20want%20to%20share%20my%20feedback%20about%20your%20service."
+        target="_blank"
+        rel="noopener"
+        style="
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          background: #25d366;
+          color: #fff;
+          padding: 14px 28px;
+          border-radius: 12px;
+          font-weight: 700;
+          font-size: 0.95rem;
+          text-decoration: none;
+        "
+        onmouseover="this.style.transform='translateY(-2px)'"
+        onmouseout="this.style.transform='translateY(0)'"
+      >
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Share on WhatsApp
+      </a>
+    </div>
+  </div>
+</div>    
+<div class="section-label">What Customers Say</div>
+    <h2 class="section-title">Neighbours Trust Us</h2>
+    <p class="section-sub">Real words from real people in Adajan — no scripts, no fake names.</p>
+
+    <div class="reviews-grid">
+
+      <article class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars" aria-label="5 out of 5 stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-text">My HP laptop completely stopped turning on before my CA exam — I was panicking. Took it to Rehan bhai and he fixed it in literally 3 hours. Said it was a battery and power IC issue. He saved all my study files. I was so relieved. This shop is a lifesaver, seriously.</p>
+        <div class="review-footer">
+          <div class="review-avatar" aria-hidden="true">PD</div>
+          <div>
+            <div class="review-name">Pratik Desai</div>
+            <div class="review-area">Adajan Patiya, Surat</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars" aria-label="5 out of 5 stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-text">I had an old desktop sitting in the corner for two years. Got it upgraded with an SSD and new RAM here. Now it runs Windows 11 better than my office laptop! The price was so fair — Rehan showed me exactly what parts were needed and didn't add anything extra. I'll never go anywhere else.</p>
+        <div class="review-footer">
+          <div class="review-avatar" aria-hidden="true">MV</div>
+          <div>
+            <div class="review-name">Mehul Vora</div>
+            <div class="review-area">Vesu, Surat</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="review-card">
+        <div class="review-quote">"</div>
+        <div class="review-stars" aria-label="5 out of 5 stars">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#f59e0b" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+        </div>
+        <p class="review-text">My hard drive crashed and I thought I'd lost 3 years of work photos and business documents. Computer Solution recovered literally everything — they called me step by step during the process. Took one day. I'm still shocked this was possible. Recommend them 100% for data recovery.</p>
+        <div class="review-footer">
+          <div class="review-avatar" aria-hidden="true">NK</div>
+          <div>
+            <div class="review-name">Nisha Kapadia</div>
+            <div class="review-area">Adajan, Surat</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== PRICING ===== -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-label">Transparent Pricing</div>
+    <h2 class="section-title">No Hidden Charges. Ever.</h2>
+    <p class="section-sub">We give you the real price before we start. What you see is what you pay.</p>
+
+    <div class="pricing-list">
+      <div class="price-row">
+        <div class="price-left">
+          <div class="price-node" aria-hidden="true"></div>
+          <div>
+            <div class="price-service">Laptop Diagnosis &amp; Inspection</div>
+            <div class="price-note">Full hardware check, no obligations</div>
+          </div>
+        </div>
+        <div class="price-amount">FREE</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-left">
+          <div class="price-node" aria-hidden="true"></div>
+          <div>
+            <div class="price-service">Windows 10 / 11 Fresh Installation</div>
+            <div class="price-note">Includes all drivers, basic software</div>
+          </div>
+        </div>
+        <div class="price-amount">₹500 – ₹700</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-left">
+          <div class="price-node" aria-hidden="true"></div>
+          <div>
+            <div class="price-service">Laptop Screen Replacement</div>
+            <div class="price-note">Parts + labour, varies by model</div>
+          </div>
+        </div>
+        <div class="price-amount">₹1,800 – ₹5,500</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-left">
+          <div class="price-node" aria-hidden="true"></div>
+          <div>
+            <div class="price-service">SSD Upgrade (256 GB / 512 GB)</div>
+            <div class="price-note">Installation + OS migration included</div>
+          </div>
+        </div>
+        <div class="price-amount">₹1,800 – ₹3,200</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-left">
+          <div class="price-node" aria-hidden="true"></div>
+          <div>
+            <div class="price-service">RAM Upgrade</div>
+            <div class="price-note">4 GB / 8 GB / 16 GB options available</div>
+          </div>
+        </div>
+        <div class="price-amount">₹800 – ₹2,800</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-left">
+          <div class="price-node" aria-hidden="true"></div>
+          <div>
+            <div class="price-service">Laptop Battery Replacement</div>
+            <div class="price-note">Compatible &amp; OEM options, by model</div>
+          </div>
+        </div>
+        <div class="price-amount">₹900 – ₹2,500</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-left">
+          <div class="price-node" aria-hidden="true"></div>
+          <div>
+            <div class="price-service">Data Recovery (HDD / SSD / USB)</div>
+            <div class="price-note">Logical recovery; physical on request</div>
+          </div>
+        </div>
+        <div class="price-amount">₹800 – ₹3,500</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-left">
+          <div class="price-node" aria-hidden="true"></div>
+          <div>
+            <div class="price-service">Desktop Full Service &amp; Cleaning</div>
+            <div class="price-note">Thermal paste, dusting, health check</div>
+          </div>
+        </div>
+        <div class="price-amount">₹350 – ₹600</div>
+      </div>
+
+      <div class="price-row">
+        <div class="price-left">
+          <div class="price-node" aria-hidden="true"></div>
+          <div>
+            <div class="price-service">Virus &amp; Malware Removal</div>
+            <div class="price-note">Full clean + antivirus setup</div>
+          </div>
+        </div>
+        <div class="price-amount">₹400 – ₹700</div>
+      </div>
+    </div>
+
+    <div class="pricing-footer">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-dark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0;"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+      <p><strong>Not sure about the cost?</strong> Just bring your device in or WhatsApp us — we'll give you an honest estimate before any work starts. Diagnosis is always free.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== CONTACT ===== -->
+<section id="contact">
+  <div class="container">
+    <div class="section-label">Find Us</div>
+    <h2 class="section-title">Visit the Shop or Reach Out</h2>
+    <p class="section-sub" style="color:rgba(250,249,247,0.6);">We're right here in Adajan — easy to find, easy to reach.</p>
+
+    <div class="contact-grid">
+
+      <div class="map-wrap">
+        <iframe
+          src="https://maps.google.com/maps?q=Shop+No+1+D-20+Krishna+Nagar+Soc+Opp+Chowksiwadi+Adajan+Surat+Gujarat+395009&output=embed"
+          title="Computer Solution location map — Adajan Surat"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+
+      <div>
+        <div class="contact-info-grid">
+          <div class="info-block">
+            <div class="info-block-label">Address</div>
+            <div class="info-block-val">
+              Shop No.1 D-20, Krishna Nagar Soc.,<br>
+              Opp. Chowksiwadi, Adajan,<br>
+              Surat, Gujarat 395009
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block-label">Shop Hours</div>
+            <div class="info-block-val">
+              <div class="hours-grid">
+                <span class="hours-day">Monday – Saturday</span>
+                <span class="hours-time">10:30 AM – 9:00 PM</span>
+                <span class="hours-day">Sunday</span>
+                <span class="hours-time">Closed</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block-label">Phone</div>
+            <div class="info-block-val">
+              <a href="tel:+917878787858">+91 78787 87858</a>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block-label">Email</div>
+            <div class="info-block-val">
+              <a href="mailto:computersolution2003@gmail.com">computersolution2003<br>@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block-label">WhatsApp</div>
+            <div class="info-block-val">
+              <a href="https://wa.me/917878787858?text=Hello%20Computer%20Solution!%20I%20want%20to%20visit%20or%20ask%20about%20your%20services." target="_blank" rel="noopener">+91 78787 87858</a>
+            </div>
+          </div>
+
+          <div class="info-block">
+            <div class="info-block-label">Instagram</div>
+            <div class="info-block-val">
+              <a href="https://instagram.com/Computer_Solution_786" target="_blank" rel="noopener">@Computer_Solution_786</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-ctas">
+          <a href="tel:+917878787858" class="btn btn-outline" style="color:var(--white);border-color:rgba(250,249,247,0.35);" aria-label="Call Computer Solution">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Call Now
+          </a>
+          <a href="https://wa.me/917878787858?text=Hello%20Computer%20Solution!%20I%20want%20to%20bring%20my%20device%20for%20repair.%20Can%20you%20confirm%20your%20availability%20today%3F" class="btn btn-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp for visit">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Message on WhatsApp
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+<footer id="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <a href="#" class="logo" aria-label="Computer Solution Home">
+  <img
+    src="https://i.ibb.co/gMDz8h1d/Whats-App-Image-2026-04-30-at-12-57-28-PM-2.png"
+    alt="Computer Solution Logo"
+    style="height:44px; width:auto; object-fit:contain;"
+  >
+  <div class="logo-text">
+    Computer Solution
+    <span>Adajan, Surat</span>
+  </div>
+</a>
+      <p class="footer-tagline">Fast, reliable laptop &amp; PC repair services — trusted in Adajan for 17 years.</p>
+      <a href="https://wa.me/917878787858?text=Hi%20Computer%20Solution!%20I%20need%20help%20with%20my%20device.%20Can%20you%20assist%20me%3F" class="footer-whatsapp-cta" target="_blank" rel="noopener" aria-label="WhatsApp Computer Solution">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chat on WhatsApp
+      </a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Laptop Repair</a></li>
+        <li><a href="#services">Desktop Repair &amp; Upgrade</a></li>
+        <li><a href="#services">Windows Installation</a></li>
+        <li><a href="#services">Data Recovery</a></li>
+        <li><a href="#services">Accessories</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#about">About Rehan</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact &amp; Hours</a></li>
+      </ul>
+      <div class="footer-social" style="margin-top:20px;">
+        <a href="https://instagram.com/Computer_Solution_786" class="social-link" target="_blank" rel="noopener" aria-label="Instagram @Computer_Solution_786">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+        </a>
+        <a href="https://wa.me/917878787858?text=Hi%20Computer%20Solution!%20I%20need%20help." class="social-link" target="_blank" rel="noopener" aria-label="WhatsApp Computer Solution">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Computer Solution, Adajan, Surat. All rights reserved.</p>
+    <p>Shop No.1 D-20, Krishna Nagar Soc., Adajan, Surat 395009 &nbsp;·&nbsp; <a href="tel:+917878787858" style="color:var(--accent);">+91 78787 87858</a></p>
+  </div>
+</footer>
+
+
+<!-- ===== STICKY BOTTOM BAR (mobile only) ===== -->
+<div class="sticky-bar" role="navigation" aria-label="Quick contact">
+  <a href="tel:+917878787858" class="btn btn-call" aria-label="Call Computer Solution now">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Call Now
+  </a>
+  <a href="https://wa.me/917878787858?text=Hi%20Computer%20Solution!%20I%20need%20repair%20help.%20Can%20you%20assist%20me%3F" class="btn btn-whatsapp" target="_blank" rel="noopener" aria-label="WhatsApp Computer Solution">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    WhatsApp
+  </a>
+</div>
+
+
+<!-- ===== SCROLL TO TOP ===== -->
+<button class="scroll-top" id="scroll-top" aria-label="Scroll to top">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // Dynamic year
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Hamburger menu toggle
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  hamburger.addEventListener('click', function () {
+    const isOpen = mobileMenu.classList.toggle('open');
+    hamburger.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  // Close menu on mobile link click
+  document.querySelectorAll('.mobile-link').forEach(function (link) {
+    link.addEventListener('click', function () {
+      mobileMenu.classList.remove('open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    });
+  });
+
+  // Scroll to top button visibility
+  const scrollTopBtn = document.getElementById('scroll-top');
+  window.addEventListener('scroll', function () {
+    if (window.scrollY > 400) {
+      scrollTopBtn.classList.add('visible');
+    } else {
+      scrollTopBtn.classList.remove('visible');
+    }
+  });
+
+  scrollTopBtn.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  // Minimal intersection observer for subtle fade-in on cards
+  if ('IntersectionObserver' in window) {
+    var style = document.createElement('style');
+    style.textContent = '.reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.5s ease, transform 0.5s ease; } .reveal.visible { opacity: 1; transform: none; }';
+    document.head.appendChild(style);
+
+    var revealEls = document.querySelectorAll('.service-card, .review-card, .trust-item, .gallery-item, .price-row');
+    revealEls.forEach(function (el) { el.classList.add('reveal'); });
+
+    var observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    revealEls.forEach(function (el) { observer.observe(el); });
+  }
+</script>
+
+</body>
+</html>
