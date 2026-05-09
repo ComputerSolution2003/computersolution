@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://computersolution2003.github.io/computersolution/sitemap.xml
+
+Sitemap: https://computersolutionsurat.com/sitemap.xml
