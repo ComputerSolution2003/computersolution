@@ -2256,9 +2256,18 @@ font-family:Arial,sans-serif;
 }
 
 #ayesha-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
 background:#0d6efd;
 color:white;
 padding:12px;
+font-weight:bold;
+}
+
+#ayesha-close{
+cursor:pointer;
+font-size:16px;
 font-weight:bold;
 }
 
@@ -2315,8 +2324,10 @@ font-weight:bold;
 
 <button id="ayesha-btn">💬 Assistant Ayesha</button>
 
-<div id="ayesha-chat">
-<div id="ayesha-header">Assistant Ayesha 👩‍💻</div>
+<div id="ayesha-header">
+<span>Assistant Ayesha 👩‍💻</span>
+<span id="ayesha-close">✖</span>
+</div>
 
 <div id="ayesha-messages">
 <div class="ayesha-bot">
@@ -2341,12 +2352,16 @@ WhatsApp Us
 <script>
 const btn=document.getElementById('ayesha-btn');
 const chat=document.getElementById('ayesha-chat');
+const closeBtn=document.getElementById('ayesha-close');
 const messages=document.getElementById('ayesha-messages');
 let messageCount = 0;
 
 btn.onclick=()=>{
 chat.style.display=
 chat.style.display==='block'?'none':'block';
+}
+closeBtn.onclick=()=>{
+chat.style.display='none';
 }
 
 async function sendMessage(){
