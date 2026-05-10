@@ -64,31 +64,41 @@ ${message}
 `;
 
     const response = await fetch(
-      'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' +
-        process.env.GEMINI_API_KEY,
-      {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
+  'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=' +
+    process.env.GEMINI_API_KEY,
+  {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify({
+      contents: [
+        {
+          parts: [{ text: prompt }],
         },
-        body: JSON.stringify({
-          contents: [
-            {
-              parts: [{ text: prompt }],
-            },
-          ],
-        }),
-      }
-    );
+      ],
+    }),
+  }
+);
 
-    const data = await response.json();
+const data = await response.json();
 
-    const reply =
-      data.candidates?.[0]?.content?.parts?.[0]?.text ||
-      'Please WhatsApp us for more details 😊';
+console.log(data);
 
-    res.status(200).json({ reply });
+let reply = 'Please WhatsApp us for more details 😊';
 
+if (
+  data &&
+  data.candidates &&
+  data.candidates.length > 0 &&
+  data.candidates[0].content &&
+  data.candidates[0].content.parts &&
+  data.candidates[0].content.parts.length > 0
+) {
+  reply = data.candidates[0].content.parts[0].text;
+}
+
+res.status(200).json({ reply });
   } catch (error) {
     res.status(500).json({
       reply: 'Server busy right now 😊 Please try again or WhatsApp us.',
