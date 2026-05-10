@@ -2342,6 +2342,7 @@ WhatsApp Us
 const btn=document.getElementById('ayesha-btn');
 const chat=document.getElementById('ayesha-chat');
 const messages=document.getElementById('ayesha-messages');
+let messageCount = 0;
 
 btn.onclick=()=>{
 chat.style.display=
@@ -2349,6 +2350,21 @@ chat.style.display==='block'?'none':'block';
 }
 
 async function sendMessage(){
+messageCount++;
+
+if(messageCount > 4){
+
+messages.innerHTML += `
+<div class="ayesha-bot">
+For more details please contact us on WhatsApp 😊<br><br>
+📞 7878787858
+</div>
+`;
+
+messages.scrollTop = messages.scrollHeight;
+
+return;
+}
 
 const input=document.getElementById('ayesha-text');
 const text=input.value.trim();
