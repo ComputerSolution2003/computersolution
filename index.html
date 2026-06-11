@@ -14,8 +14,8 @@
 <!-- ✅ PATHS KO THEEK KIYA GAYA HAI ✅ -->
 <meta name="robots" content="index, follow">
 <meta property="og:url" content="https://computersolutionsurat.com/">
-<meta property="og:image" content="https://computersolutionsurat.com/logo.png"> <!-- Yahan path "logo.png" kar diya hai -->
-<link rel="icon" type="image/png" href="https://computersolutionsurat.com/logo.png"> <!-- Yahan path "logo.png" kar diya hai -->
+<meta property="og:image" content="https://computersolutionsurat.com/logo.png">
+<link rel="icon" type="image/png" href="https://computersolutionsurat.com/logo.png">
 <link rel="canonical" href="https://computersolutionsurat.com/">
 <title>Computer Shop & Laptop Repair in Adajan Surat | Computer Solution</title>
 
@@ -125,8 +125,6 @@
   }
 
   /* ===== CIRCUIT MOTIF UTILITY ===== */
-  /* Blueprint grid + circuit node bullets used 6 times */
-
   .circuit-bullet {
     display: inline-flex;
     align-items: center;
@@ -379,7 +377,6 @@
     align-items: center;
   }
 
-  /* Blueprint grid background */
   #hero::before {
     content: '';
     position: absolute;
@@ -391,7 +388,6 @@
     pointer-events: none;
   }
 
-  /* Glowing circuit lines */
   #hero::after {
     content: '';
     position: absolute;
@@ -492,7 +488,6 @@
     pointer-events: none;
   }
 
-  /* Floating stat card */
   .hero-stat-card {
     position: absolute;
     bottom: -20px;
@@ -563,7 +558,6 @@
     overflow: hidden;
   }
 
-  /* Hazard stripe accent - circuit motif usage #2 */
   #trust::before {
     content: '';
     position: absolute;
@@ -624,7 +618,6 @@
     position: relative;
   }
 
-  /* Circuit node motif #3 - background decoration */
   #services::before {
     content: '';
     position: absolute;
@@ -644,7 +637,6 @@
     gap: 20px;
   }
 
-  /* Layout-breaking moment: first card spans 2 cols */
   .service-card {
     background: var(--white);
     border-radius: var(--radius-lg);
@@ -723,6 +715,9 @@
 
   .service-footer {
     margin-top: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
 
   /* ===== ABOUT ===== */
@@ -733,7 +728,6 @@
     overflow: hidden;
   }
 
-  /* Circuit lines motif #4 */
   #about::after {
     content: '';
     position: absolute;
@@ -844,7 +838,6 @@
     overflow: hidden;
   }
 
-  /* Circuit grid motif #5 */
   #gallery::before {
     content: '';
     position: absolute;
@@ -1012,7 +1005,6 @@
     gap: 14px;
   }
 
-  /* Circuit node motif #6 */
   .price-node {
     width: 10px;
     height: 10px;
@@ -1060,31 +1052,30 @@
   .pricing-footer p strong { color: var(--ink); }
 
   /* ===== FAQ ===== */
+  #faq{
+    padding:100px 20px;
+    background:var(--surface);
+  }
 
-#faq{
-  padding:100px 20px;
-  background:var(--surface);
-}
+  .faq-item{
+    background:#f8fafc;
+    border:1px solid rgba(0,200,224,0.20);
+    border-radius:16px;
+    padding:24px;
+    margin-bottom:16px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.05);
+  }
 
-.faq-item{
-  background:#f8fafc;
-  border:1px solid rgba(0,200,224,0.20);
-  border-radius:16px;
-  padding:24px;
-  margin-bottom:16px;
-  box-shadow:0 4px 12px rgba(0,0,0,0.05);
-}
+  .faq-item h3{
+    color:#0f172a;
+    margin-bottom:10px;
+    font-size:1.1rem;
+  }
 
-.faq-item h3{
-  color:#0f172a;
-  margin-bottom:10px;
-  font-size:1.1rem;
-}
-
-.faq-item p{
-  color:#475569;
-  line-height:1.7;
-}
+  .faq-item p{
+    color:#475569;
+    line-height:1.7;
+  }
 
   /* ===== CONTACT ===== */
   #contact {
@@ -1411,23 +1402,21 @@
 </script>
 </head>
 <body>
-</head>
-<body>
 
 <!-- ===== HEADER ===== -->
 <header id="site-header">
   <div class="header-inner">
     <a href="#" class="logo" aria-label="Computer Solution Home">
-  <img
-    src="logo.png"
-    alt="Computer Solution Logo"
-    style="height:64px; width:auto; object-fit:contain;"
-  >
-  <div class="logo-text">
-    Computer Solution
-    <span>Adajan, Surat</span>
-  </div>
-</a>
+      <img
+        src="logo.png"
+        alt="Computer Solution Logo"
+        style="height:64px; width:auto; object-fit:contain;"
+      >
+      <div class="logo-text">
+        Computer Solution
+        <span>Adajan, Surat</span>
+      </div>
+    </a>
     <nav class="header-nav" aria-label="Main navigation">
       <a href="#services">Services</a>
       <a href="#about">About</a>
@@ -1471,7 +1460,6 @@
   <div class="hero-inner">
     <div class="hero-content">
       <div class="hero-badge">
-        <!-- Circuit node motif #1 -->
         <svg width="10" height="10" viewBox="0 0 10 10" fill="none" aria-hidden="true">
           <circle cx="5" cy="5" r="4" stroke="currentColor" stroke-width="1.5"/>
           <circle cx="5" cy="5" r="1.5" fill="currentColor"/>
@@ -1512,8 +1500,6 @@
         <div class="num">17+</div>
         <div class="lbl">Years of Trust</div>
       </div>
-
-      
     </div>
   </div>
 </section>
@@ -1549,6 +1535,14 @@
     <h2 class="section-title">Every Repair, Done Right</h2>
     <p class="section-sub">From a cracked screen to a failed hard drive, we handle it all — quickly, carefully, and at a price that makes sense.</p>
 
+    <!-- ✅ NEW: Quick Page Links (4 naye pages ke buttons) -->
+    <div style="display:flex; flex-wrap:wrap; gap:10px; margin-bottom:28px;">
+      <a href="laptop-repair.html" class="btn btn-outline btn-sm">🔧 Laptop Repair</a>
+      <a href="desktop-repair.html" class="btn btn-outline btn-sm">🖥️ Desktop Repair</a>
+      <a href="security-solutions.html" class="btn btn-outline btn-sm">📷 Security Solutions</a>
+      <a href="refurbished-laptops.html" class="btn btn-outline btn-sm">💻 Refurbished Laptops</a>
+    </div>
+
     <div class="services-grid">
 
       <!-- Featured card: spans 2 cols -->
@@ -1561,6 +1555,8 @@
           <p class="service-desc">Professional Laptop Repair Service in Adajan, Surat including screen replacement, motherboard repair, battery replacement, SSD upgrades, overheating fixes and keyboard repairs. We service Dell, HP, Lenovo, Acer, ASUS, Apple and more. Most repairs are completed the same day.</p>
           <div class="service-price">Starting ₹350 — Parts + Labour Transparent Quote</div>
           <div class="service-footer">
+            <!-- ✅ NEW: View Details link added -->
+            <a href="laptop-repair.html" class="btn btn-outline btn-sm" style="color:rgba(250,249,247,0.85);border-color:rgba(250,249,247,0.35);">View Details</a>
             <a href="https://wa.me/917878787858?text=Hi!%20I%20need%20laptop%20repair%20service.%20Can%20you%20help%20me%20with%20a%20quote%20and%20timeline%3F" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener" aria-label="WhatsApp for laptop repair">
               <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
               Ask on WhatsApp
@@ -1578,6 +1574,8 @@
         <p class="service-desc">Professional Computer Repair Service in Adajan, Surat including RAM upgrades, SSD installation, PSU replacement, GPU fitting and custom PC building. Trusted Computer Shop for gaming and office desktop repairs.</p>
         <div class="service-price">Starting ₹250 — Free Diagnosis</div>
         <div class="service-footer">
+          <!-- ✅ NEW: View Details link added -->
+          <a href="desktop-repair.html" class="btn btn-outline btn-sm">View Details</a>
           <a href="https://wa.me/917878787858?text=Hello!%20I%20need%20desktop%20repair%20or%20upgrade%20service.%20Can%20you%20give%20me%20details%20and%20pricing%3F" class="btn btn-primary btn-sm" target="_blank" rel="noopener" aria-label="WhatsApp for desktop repair">
             Get Quote
           </a>
@@ -1626,6 +1624,32 @@
           <a href="https://wa.me/917878787858?text=Hi!%20I%20am%20looking%20for%20computer%20accessories%20or%20components.%20Can%20you%20tell%20me%20what%20is%20available%20and%20pricing%3F" class="btn btn-primary btn-sm" target="_blank" rel="noopener" aria-label="WhatsApp for accessories">
             Check Availability
           </a>
+        </div>
+      </article>
+
+      <!-- ✅ NEW Card 6: Security Solutions -->
+      <article class="service-card">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h3 class="service-name">Security &amp; CCTV Solutions</h3>
+        <p class="service-desc">CCTV installation, network security setup, and surveillance systems for homes and businesses in Adajan, Surat. Full installation with remote viewing setup included.</p>
+        <div class="service-price">Call for custom quote</div>
+        <div class="service-footer">
+          <a href="security-solutions.html" class="btn btn-primary btn-sm">View Details</a>
+        </div>
+      </article>
+
+      <!-- ✅ NEW Card 7: Refurbished Laptops -->
+      <article class="service-card">
+        <div class="service-icon">
+          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+        </div>
+        <h3 class="service-name">Refurbished Laptops</h3>
+        <p class="service-desc">Quality-tested refurbished laptops with warranty in Surat. Dell, HP, Lenovo available for students, professionals and small businesses at the best prices.</p>
+        <div class="service-price">Starting ₹8,500 with warranty</div>
+        <div class="service-footer">
+          <a href="refurbished-laptops.html" class="btn btn-primary btn-sm">View Stock</a>
         </div>
       </article>
 
@@ -2116,17 +2140,17 @@
     <div class="contact-grid">
 
       <div class="map-wrap">
-  <iframe
-    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.796148325877!2d72.80067837503633!3d21.198065680493947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e80e2cd7621%3A0xed766fb0c426a882!2sComputer%20Solution!5e1!3m2!1sen!2sin!4v1778149604334!5m2!1sen!2sin"
-    title="Computer Solution Adajan Surat - Computer Repair Shop Location"
-    width="100%"
-    height="100%"
-    style="border:0;"
-    allowfullscreen=""
-    loading="lazy"
-    referrerpolicy="no-referrer-when-downgrade">
-  </iframe>
-</div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.796148325877!2d72.80067837503633!3d21.198065680493947!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be04e80e2cd7621%3A0xed766fb0c426a882!2sComputer%20Solution!5e1!3m2!1sen!2sin!4v1778149604334!5m2!1sen!2sin"
+          title="Computer Solution Adajan Surat - Computer Repair Shop Location"
+          width="100%"
+          height="100%"
+          style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
 
       <div>
         <div class="contact-info-grid">
@@ -2201,16 +2225,16 @@
   <div class="footer-inner">
     <div class="footer-brand">
       <a href="#" class="logo" aria-label="Computer Solution Home">
-  <img
-    src="https://i.ibb.co/gMDz8h1d/Whats-App-Image-2026-04-30-at-12-57-28-PM-2.png"
-    alt="Computer Solution Logo"
-    style="height:44px; width:auto; object-fit:contain;"
-  >
-  <div class="logo-text">
-    Computer Solution
-    <span>Adajan, Surat</span>
-  </div>
-</a>
+        <img
+          src="https://i.ibb.co/gMDz8h1d/Whats-App-Image-2026-04-30-at-12-57-28-PM-2.png"
+          alt="Computer Solution Logo"
+          style="height:44px; width:auto; object-fit:contain;"
+        >
+        <div class="logo-text">
+          Computer Solution
+          <span>Adajan, Surat</span>
+        </div>
+      </a>
       <p class="footer-tagline">Fast, reliable laptop &amp; PC repair services — trusted in Adajan for 17 years.</p>
       <a href="https://wa.me/917878787858?text=Hi%20Computer%20Solution!%20I%20need%20help%20with%20my%20device.%20Can%20you%20assist%20me%3F" class="footer-whatsapp-cta" target="_blank" rel="noopener" aria-label="WhatsApp Computer Solution">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -2221,11 +2245,12 @@
     <div class="footer-col">
       <h4>Services</h4>
       <ul>
-        <li><a href="#services">Laptop Repair</a></li>
-        <li><a href="#services">Desktop Repair &amp; Upgrade</a></li>
+        <!-- ✅ UPDATED: Footer links now point to actual pages -->
+        <li><a href="laptop-repair.html">Laptop Repair</a></li>
+        <li><a href="desktop-repair.html">Desktop Repair &amp; Upgrade</a></li>
         <li><a href="#services">Windows Installation</a></li>
         <li><a href="#services">Data Recovery</a></li>
-        <li><a href="#services">Accessories</a></li>
+        <li><a href="refurbished-laptops.html">Refurbished Laptops</a></li>
       </ul>
     </div>
 
@@ -2356,7 +2381,8 @@
     </a>
   </div>
 </section>
-  <!-- Assistant Ayesha -->
+
+<!-- Assistant Ayesha -->
 <style>
 #ayesha-btn{
 position:fixed;
