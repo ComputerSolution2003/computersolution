@@ -9,8 +9,8 @@
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://computersolutionsurat.com/images/logo.png</image:loc>
-      <image:title>Computer Solution Surat - Trusted Since 2009</image:title>
+      <image:loc>https://computersolutionsurat.com/logo.png</image:loc>
+      <image:title>Computer Solution Surat - Trusted Since 2007</image:title>
     </image:image>
   </url>
 
@@ -22,7 +22,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://computersolutionsurat.com/images/laptop-repair-surat.jpg</image:loc>
-      <image:title>Laptop Repair Service in Surat</image:title>
+      <image:title>Laptop Repair Service in Adajan Surat</image:title>
     </image:image>
   </url>
 
@@ -34,19 +34,19 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://computersolutionsurat.com/images/desktop-repair-surat.jpg</image:loc>
-      <image:title>Desktop Computer Repair Service in Surat</image:title>
+      <image:title>Desktop Computer Repair Service in Adajan Surat</image:title>
     </image:image>
   </url>
 
-  <!-- CCTV & SECURITY SYSTEMS PAGE -->
+  <!-- SECURITY SOLUTIONS PAGE -->
   <url>
-    <loc>https://computersolutionsurat.com/cctv-security-systems.html</loc>
+    <loc>https://computersolutionsurat.com/security-solutions.html</loc>
     <lastmod>2026-06-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://computersolutionsurat.com/images/cctv-installation-surat.jpg</image:loc>
-      <image:title>CCTV Camera Installation Service in Surat</image:title>
+      <image:title>CCTV Camera &amp; Security Solutions in Adajan Surat</image:title>
     </image:image>
   </url>
 
@@ -58,7 +58,7 @@
     <priority>0.9</priority>
     <image:image>
       <image:loc>https://computersolutionsurat.com/images/refurbished-laptops-surat.jpg</image:loc>
-      <image:title>Refurbished Laptops in Surat</image:title>
+      <image:title>Refurbished Laptops in Adajan Surat</image:title>
     </image:image>
   </url>
 
