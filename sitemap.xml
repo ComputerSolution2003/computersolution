@@ -62,4 +62,16 @@
     </image:image>
   </url>
 
+    <!-- KINGSTER 1TB EXTERNAL HARD DRIVE -->
+  <url>
+    <loc>https://computersolutionsurat.com/kingster-1tb-external-hard-drive.html</loc>
+    <lastmod>2026-06-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://computersolutionsurat.com/kingster-hdd.jpg</image:loc>
+      <image:title>KINGSTER 1TB External Hard Drive USB 3.0</image:title>
+    </image:image>
+  </url>      
+
 </urlset>
