@@ -712,3 +712,13 @@ gap:20px;
 flex-wrap:wrap;
 margin-top:35px;
 }
+
+.footer-col a,
+.footer-col a:visited{
+color:#ffffff;
+text-decoration:none;
+}
+
+.footer-col a:hover{
+color:var(--accent);
+}
